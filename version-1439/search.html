@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-高清剧集大全</title>
+  <meta name="description" content="搜索国产电影、热播剧、高清影视内容，按标题、标签、年份、类型快速查找。">
+  <meta name="keywords" content="国产电影在线观看免费高清_热播剧全集站-在线看电视剧,国产,视频,免费,在线观看,高清,影视大全,影片搜索,在线搜索,影视搜索">
+  <link rel="stylesheet" href="./assets/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="高清剧集大全">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">高清剧集大全</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./category-domestic.html">国产影片</a>
+      <a href="./category-japan-korea.html">日韩影片</a>
+      <a href="./category-western.html">欧美影片</a>
+      <a href="./category-tv.html">热播剧</a>
+      <a href="./ranking.html">排行榜</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <nav>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./category-domestic.html">国产影片</a>
+      <a href="./category-japan-korea.html">日韩影片</a>
+      <a href="./category-western.html">欧美影片</a>
+      <a href="./category-tv.html">热播剧</a>
+      <a href="./ranking.html">排行榜</a>
+    </nav>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Search</span>
+      <h1>影片搜索</h1>
+      <p>输入影片名称、地区、类型、年份或标签，快速查找可在线观看的高清影视内容。</p>
+      <form class="page-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="container section-block">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">Result</span>
+        <h2 data-search-title>搜索结果</h2>
+      </div>
+      <a href="category-all.html">全部影片</a>
+    </div>
+    <div class="movie-grid category-grid" data-search-results></div>
+    <div class="empty-state" data-search-empty hidden>没有找到匹配的影片</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span>▶</span>高清剧集大全</div>
+      <p>国产电影在线观看免费高清，同时提供热播国产剧的全集观看。本站资源正版高清，播放流畅，致力于服务广大国产影视爱好者。</p>
+    </div>
+    <div>
+      <h2>影片分类</h2>
+      <a href="./category-domestic.html">国产影片</a>
+      <a href="./category-japan-korea.html">日韩影片</a>
+      <a href="./category-western.html">欧美影片</a>
+      <a href="./category-tv.html">热播剧</a>
+    </div>
+    <div>
+      <h2>站内入口</h2>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./about.html">关于我们</a>
+      <a href="./copyright.html">版权声明</a>
+    </div>
+    <div>
+      <h2>热门内容</h2>
+      <p>国产电影在线观看免费高清，热播剧全集在线观看，高清影视内容持续更新。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 高清剧集大全</span>
+    <span>国产电影 · 热播剧 · 高清在线观看</span>
+  </div>
+</footer>
+<script src="./assets/js/main.js" defer></script>
+<script src="assets/js/search-data.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
